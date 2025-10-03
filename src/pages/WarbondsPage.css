@@ -1,0 +1,190 @@
+/* WarbondsPage specific styles */
+
+.warbonds-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #4a90e2 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.warbonds-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.warbond-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.warbond-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-color: #4a90e2;
+}
+
+.warbond-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.warbond-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.warbond-info p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.warbond-status {
+  display: flex;
+  align-items: center;
+}
+
+.unlocked-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.locked-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.warbond-progress {
+  margin-bottom: 2rem;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  background: #333;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(135deg, #4a90e2 0%, #8b5cf6 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.warbond-pages h4 {
+  color: #4a90e2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.pages-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.page-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.page-item:hover {
+  background: rgba(74, 144, 226, 0.1);
+  border-color: #4a90e2;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.page-number {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.page-medals {
+  color: #4a90e2;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.page-items {
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .page-header h1 {
+    font-size: 3rem;
+  }
+  
+  .warbonds-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pages-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .warbonds-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

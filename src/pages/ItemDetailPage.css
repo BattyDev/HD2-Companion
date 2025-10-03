@@ -1,0 +1,338 @@
+/* ItemDetailPage specific styles */
+
+.item-detail-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+.back-button {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #357abd;
+}
+
+.item-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.item-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.item-type {
+  color: #4a90e2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.item-description {
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.item-details {
+  margin-bottom: 3rem;
+}
+
+.detail-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.detail-section h3 {
+  color: #4a90e2;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.stat-label {
+  color: #888;
+  font-weight: 500;
+}
+
+.stat-value {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.stat-value.positive {
+  color: #4caf50;
+}
+
+.stat-value.negative {
+  color: #f44336;
+}
+
+.traits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.trait-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(74, 144, 226, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.trait-name {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.trait-value {
+  color: #4a90e2;
+  font-weight: 700;
+}
+
+.resistances-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.resistance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.resistance-type {
+  color: #888;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.resistance-value {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.effects-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.effect-item {
+  background: rgba(74, 144, 226, 0.1);
+  border: 1px solid rgba(74, 144, 226, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.effect-item h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.effect-item p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.effect-details {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.effect-details span {
+  background: rgba(255, 255, 255, 0.1);
+  color: #888;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.effect-value {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.item-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cost-section,
+.warbond-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.cost-section h3,
+.warbond-section h3 {
+  color: #4a90e2;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.cost-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(74, 144, 226, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.cost-item svg {
+  color: #4a90e2;
+}
+
+.cost-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cost-label {
+  color: #888;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.warbond-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.warbond-info svg {
+  color: #4a90e2;
+  flex-shrink: 0;
+}
+
+.warbond-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.warbond-name {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.warbond-page {
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+  .effects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .item-header h1 {
+    font-size: 3rem;
+  }
+  
+  .item-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .warbond-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .warbond-details {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .traits-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .resistances-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

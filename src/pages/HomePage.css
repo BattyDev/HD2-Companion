@@ -1,0 +1,414 @@
+/* HomePage specific styles */
+
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+/* Page header */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #4a90e2 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #888;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Major Order Section */
+.major-order-section {
+  margin-bottom: 3rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.urgency-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.major-order-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 2px solid #4a90e2;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(74, 144, 226, 0.2);
+}
+
+.major-order-content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+.major-order-description {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.major-order-briefing {
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Progress section */
+.progress-section {
+  margin-bottom: 2rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  background: #333;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  background: linear-gradient(135deg, #4a90e2 0%, #8b5cf6 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-details {
+  text-align: center;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* Reward section */
+.reward-section {
+  margin-bottom: 1.5rem;
+}
+
+.reward-section h4 {
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.reward-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(74, 144, 226, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.reward-type {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #4a90e2;
+}
+
+.reward-amount {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+/* Expiration section */
+.expiration-section {
+  text-align: center;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* Stats section */
+.stats-section {
+  margin-bottom: 3rem;
+}
+
+.stats-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-card svg {
+  color: #4a90e2;
+  flex-shrink: 0;
+}
+
+.stat-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.stat-content p {
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* Top planets section */
+.top-planets-section {
+  margin-bottom: 3rem;
+}
+
+.top-planets-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.planets-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.planet-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.planet-card:hover {
+  transform: translateY(-2px);
+}
+
+.planet-rank {
+  background: linear-gradient(135deg, #4a90e2 0%, #8b5cf6 100%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.planet-info {
+  flex: 1;
+}
+
+.planet-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.planet-biome {
+  color: #888;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.planet-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.helldiver-count {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a90e2;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.hazard-level {
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.planet-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  min-width: 80px;
+}
+
+.planet-progress .progress-bar {
+  width: 60px;
+  height: 8px;
+}
+
+.planet-progress span {
+  font-size: 0.75rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.view-all-link {
+  text-align: center;
+}
+
+/* Quick navigation section */
+.quick-nav-section {
+  margin-bottom: 2rem;
+}
+
+.quick-nav-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.quick-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.quick-nav-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quick-nav-card:hover {
+  transform: translateY(-2px);
+  border-color: #4a90e2;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+.nav-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quick-nav-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.quick-nav-card p {
+  color: #888;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .quick-nav-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header h1 {
+    font-size: 3rem;
+  }
+  
+  .major-order-card {
+    padding: 2.5rem;
+  }
+  
+  .planet-card {
+    padding: 2rem;
+  }
+  
+  .planet-stats {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .planets-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

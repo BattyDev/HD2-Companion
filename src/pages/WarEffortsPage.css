@@ -1,0 +1,386 @@
+/* WarEffortsPage specific styles */
+
+.war-efforts-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+/* Page header */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #4a90e2 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* Sort controls */
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.sort-controls label {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.sort-select {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* War efforts list */
+.war-efforts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* War effort card */
+.war-effort-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.war-effort-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-color: #4a90e2;
+}
+
+/* Card header */
+.card-header {
+  margin-bottom: 1.5rem;
+}
+
+.planet-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.planet-name-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.planet-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.biome {
+  color: #4a90e2;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hazard-level {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+/* Card stats */
+.card-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.helldiver-count {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(74, 144, 226, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.helldiver-count svg {
+  color: #4a90e2;
+  flex-shrink: 0;
+}
+
+.count-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.label {
+  color: #888;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Progress section */
+.progress-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.progress-bar {
+  background: #333;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  background: linear-gradient(135deg, #4a90e2 0%, #8b5cf6 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-details {
+  text-align: center;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* Objectives section */
+.objectives-section {
+  margin-bottom: 1.5rem;
+}
+
+.objectives-section h4 {
+  color: #4a90e2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.objectives-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.objective-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.objective-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.objective-header h5 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.objective-type {
+  background: rgba(74, 144, 226, 0.2);
+  color: #4a90e2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.objective-description {
+  color: #ccc;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.objective-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.objective-progress .progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.objective-progress .progress-fill {
+  background: linear-gradient(135deg, #4a90e2 0%, #8b5cf6 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  color: #888;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Planet location */
+.planet-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #888;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+.planet-location svg {
+  color: #4a90e2;
+}
+
+/* Summary statistics */
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 16px;
+  border: 1px solid #333;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  color: #888;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+  .card-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .objectives-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header h1 {
+    font-size: 3rem;
+  }
+  
+  .war-effort-card {
+    padding: 2.5rem;
+  }
+  
+  .planet-info {
+    align-items: center;
+  }
+  
+  .planet-meta {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .war-efforts-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .summary-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .war-efforts-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
